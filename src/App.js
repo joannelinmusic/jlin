@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+// import { Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import About from './pages/About'
+import Home from './pages/Home'
+import Gallery from './pages/Gallery'
 
-function App() {
+function App () {
+  let component
+  switch(window.location.pathname) {
+    case "/" : 
+      component = <Home />
+      break
+    case "/About":
+      component = <About />
+      break
+    case "/Gallery":
+      component = <Gallery />
+      break
+
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          "work hard to not have to work hard"
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Welcome to my world
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Navbar />
+      {component}
+    </>
+  )
 }
 
-export default App;
+export default App
