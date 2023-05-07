@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Slent';
+    src: url('/public/fonts/Alkatra-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.style {
+  height: calc(100vh);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+  
+ 
+
+  .box-container {
+    position: sticky;
+    padding-top: 70px;
+    left: 0;
+    z-index: -1;
+    justify-content: normal;
+    height: calc(100vh);
+    width: calc(100vw / 3);
+    background-color: rgb(189, 144, 107);
+    text-align: center;
+  }
+
+  .box {
+    height: calc(100vh -70px);
+  }
+  
+  .box-container-right {
+    position: sticky;
+    padding-top: 70px;
+    right: 0;
+    z-index: -1;
+    height: calc(100vh);
+    width: calc((100vw / 3) * 2);
+    background-color: rgb(255, 197, 149);
+    text-align: center;
+  }
+  
+  .box-right {
+    height: calc(100vh -70px);
+    
+    display: relative;
+  }
+
+  .section-title {
+    font-family: 'Slent';
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: calc(100vh / 2); 
+    left: calc((100vh / 3)/2);
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .bio-text {
+    font-family: 'Slent';
+    font-size: 14px;
+    display: flex;
+    /* justify-content: center; */
+    position: relative;
+    padding-top: calc(100vh / 15);
+    padding-left: 80px;
+    padding-right: 80px;
+    z-index: 1;
+  }
+  

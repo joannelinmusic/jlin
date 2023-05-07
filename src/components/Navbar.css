@@ -1,10 +1,19 @@
 * {
     box-sizing: border-box;
+    z-index: -5;
+    
 }
 
 @font-face {
     font-family: 'Tilt';
     src: url('/public/fonts/TiltPrism-Regular-VariableFont_XROT\,YROT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Slent';
+    src: url('/public/fonts/Alkatra-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -15,42 +24,42 @@ body{
 
 .nav ul {
     list-style: none;
-    padding: 1%;
-    margin: 1%;
+    margin: 0;
     display: flex;
     gap: 1rem;
+    z-index: 9999;
+    
     
 }
 
 .container {
-    margin: 1rem;
     text-align: center; 
+    font-family: 'Tilt';
+    z-index: 9999;
 }
 
 .site_title {
     font-family: 'Tilt';
-    font-size: 2rem;
-    
+    font-size: 40px;
+    z-index: 9999;
 }  
 
 .nav{
-    display: flex;
-    justify-content: center;
+    position: sticky;
+    top: 0;
     background-color: bisque;
-    
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 1rem;
-    padding: 1rem;
+    z-index: 9999;
+    height: 70px;
 }
 
 .nav_link {
-    padding: 10px;
-    font-family: 'Tilt';
+    font-family: 'Slent';
     text-align: center;
-    
     letter-spacing: 3px;
+    z-index: 9999;
 }
 
 .nav a {
@@ -59,7 +68,7 @@ body{
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 0.25%rem;
+    z-index: 9999;
 }
 
 .nav li.active {
