@@ -1,6 +1,7 @@
 {
   "name": "joanne_lin",
   "homepage": "https://joannelinmusic.github.io/joanne_lin/",
+  "proxy": "http://localhost:3000",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
