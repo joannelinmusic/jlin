@@ -31,7 +31,7 @@ export default function Gallery() {
                     <img src={photo2} className="picture" alt="" />
                     <img src={photo2} className="picture" alt="" />
                     <img src={photo2} className="picture" alt="" />
-                </div>
+                </div> 
             </div>
                 <div className="credits">
                     <div className="bio-text">
