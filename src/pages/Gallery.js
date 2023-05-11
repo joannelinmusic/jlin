@@ -19,18 +19,14 @@ export default function Gallery() {
                     <img src={photo3} className="picture" alt="" />
                     <img src={photo5} className="picture" alt="" />
                     <img src={photo7} className="picture" alt="" />
-                    <img src={photo2} className="picture" alt="" />
-                    <img src={photo2} className="picture" alt="" />
-                    <img src={photo2} className="picture" alt="" />
+                    
                 </div>
                 <div className="gallery-row-right">
                     <img src={photo2} className="picture" alt="" />
                     <img src={photo4} className="picture" alt="" />
                     <img src={photo6} className="picture" alt="" />
                     <img src={photo8} className="picture" alt="" />
-                    <img src={photo2} className="picture" alt="" />
-                    <img src={photo2} className="picture" alt="" />
-                    <img src={photo2} className="picture" alt="" />
+                    
                 </div> 
             </div>
                 <div className="credits">
